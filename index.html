@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="sw">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Clason Ebooks - Vitabu vya Kidijitali</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      background: #f5f7f8;
+      color: #171717;
+    }
+
+    .header {
+      background: #ffffff;
+      padding: 18px 20px;
+      text-align: center;
+      border-bottom: 1px solid #eeeeee;
+    }
+
+    .logo {
+      font-size: 23px;
+      font-weight: bold;
+    }
+
+    .container {
+      max-width: 500px;
+      margin: auto;
+      padding: 25px 18px 50px;
+    }
+
+    .book-card {
+      background: white;
+      border-radius: 18px;
+      padding: 20px;
+      box-shadow: 0 3px 15px rgba(0,0,0,0.07);
+    }
+
+    .book-cover {
+      width: 190px;
+      height: 260px;
+      margin: 5px auto 20px;
+      background: linear-gradient(145deg, #102a43, #1d5d8f);
+      border-radius: 8px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      color: white;
+      font-size: 25px;
+      font-weight: bold;
+      padding: 20px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.20);
+    }
+
+    h1 {
+      font-size: 25px;
+      line-height: 1.3;
+      margin-bottom: 12px;
+    }
+
+    .description {
+      color: #666;
+      line-height: 1.6;
+      margin-bottom: 18px;
+    }
+
+    .price {
+      font-size: 25px;
+      font-weight: bold;
+      margin-bottom: 18px;
+    }
+
+    .buy-button {
+      display: block;
+      width: 100%;
+      background: #08a875;
+      color: white;
+      text-decoration: none;
+      text-align: center;
+      padding: 17px;
+      border-radius: 10px;
+      font-size: 18px;
+      font-weight: bold;
+      border: none;
+      cursor: pointer;
+    }
+
+    .buy-button:active {
+      transform: scale(0.98);
+    }
+
+    .features {
+      background: white;
+      margin-top: 18px;
+      padding: 20px;
+      border-radius: 15px;
+    }
+
+    .features h2 {
+      font-size: 19px;
+      margin-bottom: 15px;
+    }
+
+    .feature {
+      padding: 9px 0;
+      color: #444;
+    }
+
+    .footer {
+      text-align: center;
+      color: #888;
+      font-size: 13px;
+      margin-top: 25px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="header">
+    <div class="logo">📚 CLASON EBOOKS</div>
+  </div>
+
+  <div class="container">
+
+    <div class="book-card">
+
+      <div class="book-cover">
+        MBINU ZA<br>
+        KUONGEZA<br>
+        KIPATO
+      </div>
+
+      <h1>Mbinu Za Kuongeza Kipato Chako</h1>
+
+      <p class="description">
+        Jifunze mbinu mbalimbali za kuongeza kipato,
+        kuboresha maisha yako na kutumia fursa zilizopo
+        kwenye mazingira yako.
+      </p>
+
+      <div class="price">
+        TZS 1,000
+      </div>
+
+      <button class="buy-button" onclick="buyNow()">
+        🛒 BUY NOW
+      </button>
+
+    </div>
+
+    <div class="features">
+
+      <h2>Unachopata</h2>
+
+      <div class="feature">✅ Ebook ya kidijitali</div>
+      <div class="feature">✅ Unaweza kusoma kwenye simu</div>
+      <div class="feature">✅ Download baada ya malipo</div>
+      <div class="feature">✅ Malipo kupitia Mobile Money</div>
+      <div class="feature">✅ M-Pesa, Airtel Money, Mixx by Yas na HaloPesa</div>
+
+    </div>
+
+    <div class="footer">
+      © 2026 Clason Ebooks. All rights reserved.
+    </div>
+
+  </div>
+
+  <script>
+    function buyNow() {
+      alert("Checkout itaunganishwa na Snippe kwenye hatua inayofuata.");
+    }
+  </script>
+
+</body>
+</html>
