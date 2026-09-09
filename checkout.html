@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="sw">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Checkout - Clason Ebooks</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      background: #f5f7f8;
+      color: #171717;
+    }
+
+    .header {
+      background: white;
+      padding: 18px;
+      text-align: center;
+      border-bottom: 1px solid #eee;
+    }
+
+    .logo {
+      font-size: 22px;
+      font-weight: bold;
+    }
+
+    .container {
+      max-width: 500px;
+      margin: auto;
+      padding: 25px 18px 50px;
+    }
+
+    .checkout-card {
+      background: white;
+      padding: 25px 20px;
+      border-radius: 18px;
+      box-shadow: 0 3px 15px rgba(0,0,0,0.07);
+    }
+
+    h1 {
+      font-size: 24px;
+      margin-bottom: 8px;
+    }
+
+    .subtitle {
+      color: #777;
+      margin-bottom: 25px;
+    }
+
+    label {
+      display: block;
+      font-weight: bold;
+      margin-bottom: 7px;
+      margin-top: 17px;
+    }
+
+    input {
+      width: 100%;
+      padding: 14px;
+      border: 1px solid #ddd;
+      border-radius: 9px;
+      font-size: 16px;
+      outline: none;
+    }
+
+    input:focus {
+      border-color: #08a875;
+    }
+
+    .summary {
+      margin-top: 25px;
+      padding: 18px;
+      background: #f7f9f9;
+      border-radius: 10px;
+    }
+
+    .summary-row {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 10px;
+    }
+
+    .total {
+      font-size: 21px;
+      font-weight: bold;
+      margin-top: 10px;
+    }
+
+    .pay-button {
+      width: 100%;
+      margin-top: 22px;
+      padding: 16px;
+      border: none;
+      border-radius: 10px;
+      background: #08a875;
+      color: white;
+      font-size: 18px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    .pay-button:active {
+      transform: scale(0.98);
+    }
+
+    .secure {
+      text-align: center;
+      color: #777;
+      font-size: 13px;
+      margin-top: 15px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="header">
+    <div class="logo">📚 CLASON EBOOKS</div>
+  </div>
+
+  <div class="container">
+
+    <div class="checkout-card">
+
+      <h1>Order Your Ebook</h1>
+
+      <p class="subtitle">
+        Jaza taarifa zako ili kuendelea na malipo.
+      </p>
+
+      <form id="checkoutForm">
+
+        <label for="name">Full Name</label>
+
+        <input
+          type="text"
+          id="name"
+          placeholder="Andika jina lako kamili"
+          required
+        >
+
+        <label for="email">Email Address</label>
+
+        <input
+          type="email"
+          id="email"
+          placeholder="mfano@gmail.com"
+          required
+        >
+
+        <label for="whatsapp">WhatsApp Number</label>
+
+        <input
+          type="tel"
+          id="whatsapp"
+          placeholder="+255 7XX XXX XXX"
+          required
+        >
+
+        <label for="phone">Payment Phone Number</label>
+
+        <input
+          type="tel"
+          id="phone"
+          placeholder="+255 7XX XXX XXX"
+          required
+        >
+
+        <div class="summary">
+
+          <div class="summary-row">
+            <span>Ebook</span>
+            <span>Mbinu Za Kuongeza Kipato</span>
+          </div>
+
+          <div class="summary-row total">
+            <span>Total</span>
+            <span>TZS 1,000</span>
+          </div>
+
+        </div>
+
+        <button type="submit" class="pay-button">
+          PAY NOW
+        </button>
+
+      </form>
+
+      <div class="secure">
+        🔒 Taarifa zako zinalindwa.
+      </div>
+
+    </div>
+
+  </div>
+
+  <script>
+
+    document
+      .getElementById("checkoutForm")
+      .addEventListener("submit", function(event) {
+
+        event.preventDefault();
+
+        const name =
+          document.getElementById("name").value;
+
+        const email =
+          document.getElementById("email").value;
+
+        const whatsapp =
+          document.getElementById("whatsapp").value;
+
+        const phone =
+          document.getElementById("phone").value;
+
+        alert(
+          "Asante " + name +
+          "! Checkout ya Snippe itaunganishwa kwenye hatua inayofuata."
+        );
+
+      });
+
+  </script>
+
+</body>
+</html>
