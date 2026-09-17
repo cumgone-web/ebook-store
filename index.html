@@ -178,8 +178,18 @@
 
   <script>
     function buyNow() {
-      alert("Checkout itaunganishwa na Snippe kwenye hatua inayofuata.");
-    }
+    const orderId = "ORDER-" + Date.now();
+
+    const metadata = btoa(JSON.stringify({
+        order_id: orderId,
+        ebook: "Dukuduku La Da Pipi"
+    }));
+
+    window.location.href =
+        "https://snippe.me/en/checkout/BYObmGq2oE?meta=" +
+        encodeURIComponent(metadata);
+}
+
   </script>
 
 </body>
