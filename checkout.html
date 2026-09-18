@@ -224,11 +224,13 @@
         const orderId = "ORD-" + Date.now();
 
 const formData = new URLSearchParams();
+
 formData.append("action", "createOrder");
 formData.append("order_id", orderId);
 formData.append("name", name);
 formData.append("email", email);
 formData.append("whatsapp", whatsapp);
+formData.append("phone", phone);
 formData.append("ebook", "Dukuduku La Da Pipi");
 
 fetch("https://script.google.com/macros/s/AKfycbw4-0UTZeeeGwdW-vMWHy5ey6GWiwEGRmz-zwg09QEboBRIjM87LJiwmJ020eOFnGp2hg/exec", {
